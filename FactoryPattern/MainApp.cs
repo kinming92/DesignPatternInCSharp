@@ -70,6 +70,16 @@ namespace FactoryPattern
                 return new ConcreteProductB();
             }
         }
+
+        class EmptyClass
+        {
+
+        }
+
+        class ToBeDelete
+        {
+            
+        }
         
     }
 }
