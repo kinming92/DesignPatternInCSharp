@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace FactoryPattern
+namespace FactoryPattern.General
 {
     /// <summary>
     /// Entry point to console application
-    // </summary>
+    /// https://www.dofactory.com/net/factory-method-design-pattern
+    /// </summary>
     class MainApp
     {
         static void Main(string[] args)
@@ -18,11 +19,9 @@ namespace FactoryPattern
 
            foreach (Creator creator in creators)
            {
-               Product product = creator.FactorMethod();
+               Product product = creator.FactoryMethod();
                Console.WriteLine($"Created {product.GetType().Name}");
 
-               // Wait for use
-               Console.ReadKey();
            }
         }
 
@@ -44,8 +43,16 @@ namespace FactoryPattern
         /// <summary>
         /// A concreteProduct class
         /// </summary>
-        class ConcreteProdcutB : Product 
+        class ConcreteProductB : Product 
         {
+        }
+
+        /// <summary>
+        /// The 'Creator' abstract class
+        /// </summary>
+        abstract class Creator
+        {
+            public abstract Product FactoryMethod();
         }
 
         /// <summary>
@@ -69,16 +76,6 @@ namespace FactoryPattern
             {
                 return new ConcreteProductB();
             }
-        }
-
-        class EmptyClass
-        {
-
-        }
-
-        class ToBeDelete
-        {
-            
         }
         
     }
