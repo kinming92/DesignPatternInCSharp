@@ -15,12 +15,16 @@
 - A provided interface is an interface that describes (the services) that instances of a classifier(supplier) offers to their clients
 - A required interface is an interface that is defined by the (client of an interaction) that (specifies what a supplier component needs to do) so that the required interface(it) can be used in that interaction.
 - I created basic UML diagram in draw.io
-###### Reference
+- ###### Reference
 - [Provided and Required Interface](https://ducmanhphan.github.io/2020-01-27-The-different-types-of-Interfaces-in-UML-diagrams/#definition-of-interface-in-diagram)
 - [Ball and Socket notation by MartinFowler](https://martinfowler.com/bliki/BallAndSocket.html)
  - [UML Diagram](https://www.uml-diagrams.org/interface.html)
 
 
+#### Date: 10/10/2021
+- Definition of Factory Method: Define an interface for creating an object, but let the subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses
+- Solved the Main method issue that two static main method exists in the main app program.
+- Learned FactoryPattern With CreditCard as an example.
 
 
 

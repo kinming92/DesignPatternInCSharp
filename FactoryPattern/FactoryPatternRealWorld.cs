@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace DesignPatternInCSharp.FactoryPattern.RealWord
+namespace FactoryPattern.RealWorld
 {
     /// <summary>
     /// The 'Product' abstract class
     /// https://www.dofactory.com/net/factory-method-design-pattern
     /// </summary>
-    /// 
 
     abstract class Page { }
 
@@ -95,9 +94,9 @@ namespace DesignPatternInCSharp.FactoryPattern.RealWord
     /// </summary>
     /// 
 
-    class MainApp
+    public static class FactoryMethodRealWorld
     {
-        static void Main()
+        public static void Program()
         {
             //note constructor call Factory Method
             Document[] documents = new Document[2];
