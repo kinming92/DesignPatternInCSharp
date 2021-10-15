@@ -26,8 +26,13 @@
 - Solved the Main method issue that two static main method exists in the main app program.
 - Learned FactoryPattern With CreditCard as an example.
 
+#### Date: 10/14/2021
+- I updated the drawio diagram
+- I got a better understanding of the usage of Factory Design Pattern that there is a Product and a Creator
+
 
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
  - [dofactory](https://www.dofactory.com/net/factory-method-design-pattern)
+ - [RefactoringGure](https://refactoring.guru/design-patterns)

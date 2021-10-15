@@ -2,6 +2,7 @@ using FactoryPattern.General;
 using FactoryPattern.RealWorld;
 using FactoryPattern.CreditCard;
 using FactoryPattern.CreditCard2;
+using FactoryPattern.RefactoringGuru;
 
 namespace FactoryPattern
 {
@@ -13,6 +14,7 @@ namespace FactoryPattern
             FactoryMethodRealWorld.Program();
             FactoryPatternCreditCard.Program();
             FactoryPatternCreditCard2.Program();
+            new Client().Program();
         }
     }
 }
