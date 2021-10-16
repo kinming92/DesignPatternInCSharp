@@ -30,9 +30,12 @@
 - I updated the drawio diagram
 - I got a better understanding of the usage of Factory Design Pattern that there is a Product and a Creator
 
+#### Date: 10/15/2021
+- I renamed the refactoring guru files and I added comments on the FactoryMethod.Conceptual.cs
+- I revised and relearned adapter design pattern.
 
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
  - [dofactory](https://www.dofactory.com/net/factory-method-design-pattern)
- - [RefactoringGure](https://refactoring.guru/design-patterns)
+ - [RefactoringGuru](https://refactoring.guru/design-patterns)

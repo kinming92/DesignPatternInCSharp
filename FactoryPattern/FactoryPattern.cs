@@ -2,7 +2,7 @@ using FactoryPattern.General;
 using FactoryPattern.RealWorld;
 using FactoryPattern.CreditCard;
 using FactoryPattern.CreditCard2;
-using FactoryPattern.RefactoringGuru;
+using RefactoringGuru.DesignPattterns.FactoryMethod.Conceptual;
 
 namespace FactoryPattern
 {
