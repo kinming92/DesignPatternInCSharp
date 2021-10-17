@@ -2,7 +2,7 @@
 
 ### Example to build all solution
 ```
-dotnet build
+dotnet build [specific project folder]
 ```
 ### Example to run the individual solution
 ```
@@ -46,6 +46,7 @@ dotnet run --project FactoryMethod
 - I updated the folder/project solution structure.
 - I added a new global Design Pattern solution for this project.
 - I added a new AdapaterPattern console application for the project solution.
+- I added the SquarePegAndRoundHole example, and learned C# setter and getter syntax.
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
