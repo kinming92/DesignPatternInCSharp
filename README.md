@@ -1,5 +1,13 @@
 # DesignPatternInCSharp
 
+### Example to build all solution
+```
+dotnet build
+```
+### Example to run the individual solution
+```
+dotnet run --project FactoryMethod
+``` 
 ### Progress
 ##### Date: 9/21/2021
 - I get started by setting up with C# in VS Code
@@ -16,9 +24,9 @@
 - A required interface is an interface that is defined by the (client of an interaction) that (specifies what a supplier component needs to do) so that the required interface(it) can be used in that interaction.
 - I created basic UML diagram in draw.io
 - ###### Reference
-- [Provided and Required Interface](https://ducmanhphan.github.io/2020-01-27-The-different-types-of-Interfaces-in-UML-diagrams/#definition-of-interface-in-diagram)
-- [Ball and Socket notation by MartinFowler](https://martinfowler.com/bliki/BallAndSocket.html)
- - [UML Diagram](https://www.uml-diagrams.org/interface.html)
+    - [Provided and Required Interface](https://ducmanhphan.github.io/2020-01-27-The-different-types-of-Interfaces-in-UML-diagrams/#definition-of-interface-in-diagram)
+    - [Ball and Socket notation by MartinFowler](https://martinfowler.com/bliki/BallAndSocket.html)
+    - [UML Diagram](https://www.uml-diagrams.org/interface.html)
 
 
 #### Date: 10/10/2021
@@ -34,6 +42,10 @@
 - I renamed the refactoring guru files and I added comments on the FactoryMethod.Conceptual.cs
 - I revised and relearned adapter design pattern.
 
+#### Date 10/16/2021
+- I updated the folder/project solution structure.
+- I added a new global Design Pattern solution for this project.
+- I added a new AdapaterPattern console application for the project solution.
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
