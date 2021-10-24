@@ -52,9 +52,9 @@ namespace RefactoringGuru.DesignPatterns.Facade.Conceptual
             }
         }
         
-        class FacadeConceptual
+        public class FacadeConceptual
         {
-            public static void Program(string[] args)
+            public static void Program()
             {
                 Subsystem1 subsystem1 = new Subsystem1();
                 Subsystem2 subsystem2 = new Subsystem2();
