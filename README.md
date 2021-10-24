@@ -56,7 +56,14 @@ dotnet sln list
 
 #### Date: 10/23/2021
 - I learned the basic of facade design pattern. I had set up a new console app for the facade design pattern.
-- The Program.cs main method failed to reference the Facade.Conceptual.cs for some reason. I need to some time to fix the problem. Issue found and it was the scope issue within the Facade class.
+- The Program.cs main method failed to reference the Facade.Conceptual.cs for some reason. I need to some time to fix the problem. Issue was found and it was the scope issue within the Facade class.
+
+#### Date: 10/24/2021
+- I added RestaurantFacade.cs and Facade Structural in Facade Design Pattern.
+- Real life use cases from c-sharp corner
+    - The shopkeeper is a facade for all the items in the shop
+    - Online travel portal is a facade for their customers for different holiday/travel packages
+    - customer care is a facade for their customers for different services
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
