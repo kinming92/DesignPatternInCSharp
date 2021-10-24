@@ -62,28 +62,54 @@ hole.fits(large_sqpeg_adapter) // false
 using System;
 namespace RefactoryGuru.DesignPattern.Adapter.SquarePegAndRoundHoles
 {
-    class RoundHole
+    public class RoundHole
     {
         public double radius { get; set; }
-        public bool fits(RoundPeg roundPeg)
+        public bool fits(IRoundPeg roundPeg)
         {
             return radius >= roundPeg.radius;
         }
     }
-    class RoundPeg
+
+    public interface IRoundPeg
+    {
+        double radius { get; set; }
+    }
+    public class RoundPeg : IRoundPeg
     {
         public double radius { get; set; }
     }
 
     // But there's an incompatible class: SquarePeg.
-    class SquarePeg
+    public class SquarePeg
     {
         public double width { get; set; }
-        public SquarePeg() : this(0) { }
+        public SquarePeg() : this(0) { }// unecessary
         public SquarePeg(double width)
         {
             this.width = width;
         }
+    }
+
+    public class SquarePegAdapter : IRoundPeg
+    {
+        private readonly SquarePeg peg;
+        public double radius
+        {
+            get
+            {
+                return peg.width * Math.Sqrt(2) / 2;
+            }
+            set
+            {
+                radius = peg.width * Math.Sqrt(2) / 2;
+            }
+        }
+        public SquarePegAdapter(SquarePeg peg)
+        {
+            this.peg = peg;
+        }
+        
     }
 
 
@@ -92,6 +118,9 @@ namespace RefactoryGuru.DesignPattern.Adapter.SquarePegAndRoundHoles
     {
         public static void Program()
         {
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine("--->Start of the SquarePegAndRoundHoles Program");
+            //Example 1
             RoundPeg roundPegA = new RoundPeg();
             roundPegA.radius = 1.3;
             Console.WriteLine($"I have a roundPegA whose the radius is {roundPegA.radius}");
@@ -102,6 +131,22 @@ namespace RefactoryGuru.DesignPattern.Adapter.SquarePegAndRoundHoles
 
             var result = roundHole.fits(roundPegA) ? "Fit" : "Not Fit";
             Console.WriteLine($"They are {result}");
+
+            //Example 2
+            RoundHole hole = new RoundHole();
+            hole.radius = 5;
+            SquarePeg smallSqPeg = new SquarePeg(5);
+            SquarePeg largeSqPeg = new SquarePeg(10);
+            // roundHole.fits(smallSqPeg); this wont compile (incompatible types)
+
+            SquarePegAdapter smallSquarePegAdapter = new SquarePegAdapter(smallSqPeg);
+            SquarePegAdapter largeSquarePegAdapter = new SquarePegAdapter(largeSqPeg);
+            Console.WriteLine(hole.fits(smallSquarePegAdapter)); // true
+            Console.WriteLine(hole.fits(largeSquarePegAdapter)); // false
+            
+
+
+            Console.WriteLine("--->End of the SquarePegAndRoundHoles Program");
 
         }
     }

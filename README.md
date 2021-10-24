@@ -48,6 +48,9 @@ dotnet run --project FactoryMethod
 - I added a new AdapaterPattern console application for the project solution.
 - I added the SquarePegAndRoundHole example, and learned C# setter and getter syntax.
 
+#### Date: 10/23/2021
+- I reworked the SquarePegAndRoundHoles.cs. I did not understand the use of public in constructor solve the inaccesiblities issue when we create a new obj with the constructor in line 142 and line 143. Apparently, the program wanted to make the constructor public explicitly.
+
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
  - [dofactory](https://www.dofactory.com/net/factory-method-design-pattern)
