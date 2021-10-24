@@ -8,6 +8,13 @@ dotnet build
 ```
 dotnet run --project FactoryMethod
 ``` 
+### Example to create a new console project and add it to the DesignPattern sln
+```
+dotnet new console --output FacadePattern
+dotnet sln add folder1/folder2/myapp
+dotnet sln list
+``` 
+### 
 ### Progress
 ##### Date: 9/21/2021
 - I get started by setting up with C# in VS Code
@@ -46,6 +53,10 @@ dotnet run --project FactoryMethod
 - I updated the folder/project solution structure.
 - I added a new global Design Pattern solution for this project.
 - I added a new AdapaterPattern console application for the project solution.
+
+#### Date: 10/23/2021
+- I learned the basic of facade design pattern. I had set up a new console app for the facade design pattern.
+- The Program.cs main method failed to reference the Facade.Conceptual.cs for some reason. I need to some time to fix the problem.
 
 ### Reference
  - [csharpcorner](https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/)
